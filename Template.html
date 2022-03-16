@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BuildUpOnline</title>
+	<link rel="icon" href="content/Images/icon 2.0.png"> <!-- getting the icon for the browser tab -->
+	<link rel="stylesheet" type="text/css" href="content/CSS/TEMPLATEstyle.css"> <!-- importing the CSS for this html page -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- icons for the website -->
+</head>
+<body>
+	<div id = "layout"> <!-- general div to hold the layout of template html -->
+		<div class = "titlearea" id = "titlearea"> <!-- div for the title section (white area) of the template -->
+			<div>
+				<img src = "content/Images/icon 2.0.png" width = "55" height = "70" alt = "BuildUpOnline LOGO" align = "left"> <!-- importing the website icon -->
+			</div>
+			<div class = "title-website">
+				<h1><span id = "title" class = "sitetitle">BuildUp<span style = "color: #4ae3de">Online</span></span></h1> <!-- creating the title for the template html -->
+			</div>
+		</div>
+		<div class = "tabspace"> <!-- div for the tab bar of the template html -->
+			<div class = "dropdown"> <!-- div for the drop-down home html -->
+				<button id = "tsite" class = "tabbuttons" onclick = "pagechange('content/Home-Page.html')">Home</button> <!-- button to goto the home page --> 
+			</div>
+			<div class = "dropdown"> <!-- div for the drop-down of the component pages -->
+				<button class = "tabbuttons" onclick =  "pagechange('content/ComponentsB.html')">Components<i class="fa fa-caret-down"></i></button> <!-- button to goto the basic function page --> 
+				<div class = "dropdown-content"> <!-- div for the drop-down content of the component pages --> 
+					<a onclick = "pagechange('content/ComponentsB.html')">Basic Function</a> <!-- drop-down reference for the basic function page --> 
+					<a onclick = "pagechange('content/BuyerGuide.html')">Buyer Guide</a> <!-- drop-down reference for the buyers guide page --> 
+					<a onclick = "pagechange('content/Access.html')">Accessaries</a> <!-- drop-down reference for the accessories page --> 
+				</div>
+			</div>
+			<div class = "dropdown"> <!-- div for the drop-down of the market guide pages --> 
+				<button class = "tabbuttons" onclick = "pagechange('content/Retail.html')">Markets<i class="fa fa-caret-down"></i></button> <!-- button to goto the market guide pages --> 
+				<div class = "dropdown-content"> <!-- div for the drop-down content of the market guide pages --> 
+					<a onclick = "pagechange('content/Retail.html')">Major Retail Market</a> <!-- drop-down for the major retail page --> 
+					<a onclick = "pagechange('content/SRetail.html')">Specialize Market</a> <!-- drop-down for the specialized retail page --> 
+					<a onclick = "pagechange('content/Second.html')">Second-Hand Market</a> <!-- drop-down for the second hand page --> 
+				</div>
+			</div>
+			<div class = "dropdown"> <!-- div for the drop-down of the instructional manual pages --> 
+				<button class = "tabbuttons" onclick = "pagechange('content/Step0.html')">Build Manual<i class="fa fa-caret-down"></i></button> <!-- button to goto the instructional manual pages --> 
+				<div class = "dropdown-content"> <!-- div for the drop-down content of the instructional manual pages --> 
+					<a onclick = "pagechange('content/Step0.html')">Step 0: Gather Everything</i></a> <!-- drop-down for Step 0 of the instructional manual --> 
+					<a onclick = "pagechange('content/Step1.html')">Step 1: Preparing for installation</i></a> <!-- drop-down for the Step 1 of the instructional manual --> 
+					<a onclick = "pagechange('content/Step2.html')">Step 2: Exterior installation</i></a> <!-- drop-down for the Step 2 of the instructional manual -->
+					<a onclick = "pagechange('content/Step3.html')">Step 3: Adding to the PCI components</i></a> <!-- drop-down for the Step 3 of the instructional manual -->
+					<a onclick = "pagechange('content/Step4.html')">Step 4: Finishing the computer</i></a> <!-- drop-down for the Step 4 of the instructional manual -->
+				</div>
+			</div>
+			<div class = "dropdown"> <!-- div for the drop-down of the reference section pages -->
+				<button class = "tabbuttons" onclick = "pagechange('content/Learn.html')">Reference Materials<i class="fa fa-caret-down"></i></button> <!-- button to the goto the reference pages -->
+				<div class = "dropdown-content"> <!-- div for the drop-down content of the reference pages -->
+					<a onclick = "pagechange('content/Learn.html')">Learning Material</a> <!-- place holder for the reference of the Learning page -->
+				</div>
+			</div>
+			<div class = "searchSpace">
+				<a href = "https://www.google.ca/" target = "_blank">
+					<img class = "searchLogo" src = "https://assets.materialup.com/uploads/82eae29e-33b7-4ff7-be10-df432402b2b6/preview" width = "35px" height = "35px">
+				</a>
+				<form action = "https://www.google.com/search" method = "GET" target = "_blank"> <!-- creates the search bar -->
+					<input class = "searchBar" type = "text" placeholder = "Google Search..." name = "q" value = ""> <!-- creates the input area for the search of the search bar -->
+					<button type = "submit" class = "searchButton"><i class = "fa fa-search"></i></button> <!-- creates the search button -->
+				</form>
+			</div>
+		</div>
+		<div class = "row" id = "menucol"> <!-- general div for the sub-menu column -->
+			<div class = "menu" id = "sub"> <!-- div for the sub-menu buttons -->
+				<div class = "subdiv" id = "componentssub">
+					<h2><span id = "subtab menu" > Menu</span></h2> <!-- sub-menu title -->
+					<button class = "subbuttons" id = "compbuttons1" onclick = "pagechange('content/ComponentsB.html')">Basic Function</button> <!-- sub-menu button for the basic function page -->
+					<button class = "subbuttons" id = "compbuttons2" onclick = "pagechange('content/BuyerGuide.html')">Buyers Guide</button> <!-- sub-menu button for the buyers guide page -->
+					<button class = "subbuttons" id = "compbuttons3" onclick = "pagechange('content/Access.html')">Accessaries</button> <!-- sub-menu button for the accessories page -->
+				</div>
+				<div class = "subdiv" id = "marketsub">
+					<h2><span id = "subtab menu" > Menu</span></h2> <!-- sub-menu title -->
+					<button class = "subbuttons" id = "markbuttons1" onclick = "pagechange('content/Retail.html')">Major Retail Market</button> <!-- sub-menu button for the major retail page -->
+					<button class = "subbuttons" id = "markbuttons2" onclick = "pagechange('content/SRetail.html')">Specialize Market</button> <!-- sub-menu button for the specialized market page -->
+					<button class = "subbuttons" id = "markbuttons3" onclick = "pagechange('content/Second.html')">Second-hand Market</button> <!-- sub-menu button for the second-hand page -->
+				</div>
+				<div class = "subdiv" id = "manualsub">
+					<h2><span id = "subtab menu" > Menu</span></h2> <!-- sub-menu title -->
+					<button class = "subbuttons" id = "stepbuttons1" onclick = "pagechange('content/Step0.html')">Step 0: Gathering everything</button> <!-- sub-menu for the step0 page -->
+					<button class = "subbuttons" id = "stepbuttons2" onclick = "pagechange('content/Step1.html')">Step 1: Preparing for installation</button> <!-- sub-menu for the step1 page -->
+					<button class = "subbuttons" id = "stepbuttons3" onclick = "pagechange('content/Step2.html')">Step 2: Exterior installation</button> <!-- sub-menu for the step2 page -->
+					<button class = "subbuttons" id = "stepbuttons4" onclick = "pagechange('content/Step3.html')">Step 3: Adding to the PCI components</button> <!-- sub-menu for the step3 page -->
+					<button class = "subbuttons" id = "stepbuttons5" onclick = "pagechange('content/Step4.html')">Step 4: Finishing the computer</button> <!-- sub-menu for the step4 page -->
+				</div>
+				<div class = "subdiv" id = "refsub">
+					<h2><span id = "subtab menu" > Menu</span></h2> <!-- sub-menu title -->
+					<button class = "subbuttons" id = "refbuttons1" onclick = "pagechange('content/Learn.html')">Learning Material</button> <!-- sub-menu for the Learning page -->
+				</div>
+			</div>
+			<iframe id = "frame"></iframe> <!-- iframe for the content of the template html -->
+			<div class = "row" id = "ManualNav">
+				<button onclick = "Navchange(0)" class = "navbutton" id = "prev">&laquo; Prev</button> <!-- button used to move to the Step 0 page -->
+				<button onclick = "Navchange(1)" class = "navbutton" id = "next">Next &raquo;</button> <!-- button used to move to the Step 2 page -->
+			</div>
+		</div>
+	</div>
+<script>
+	pagechange("content/Home-Page.html"); //default page being displayed 
+	
+	function pagechange(pagename){ //changes the iframe source with parameters given to each specific button and changes the title of the tab
+		var cont = document.getElementById("frame"); //gets the iframe data based on id name
+		
+		subdisplay(pagename); //changes the submenus options depending on the section that the user selected
+		
+		cont.src = pagename; //changes the source of the iframe based on the parameter given
+	}
+	
+	function subdisplay(pagename){ //changes the submenu options being displayed depending on the section selected
+		var cont = document.getElementById("frame"); //gets the iframe data based on id name
+		var navbuttons = document.getElementById("ManualNav"); //gets the navigation buttons area for the instruction manual page
+		
+		var compsubtabs = document.getElementById("componentssub"); //gets the sub-menu options for the components section
+		var marksubtabs = document.getElementById("marketsub"); //gets the sub-menu options for the market section
+		var manualsubtabs = document.getElementById("manualsub"); //gets the sub-menu options for the instructional manual section
+		var refsubtabs = document.getElementById("refsub"); //gets the sub-menu options for the reference section
+		
+		var title = document.getElementById("titlearea"); //gets the title area elements 
+		var submenu = document.getElementById("sub"); //gets the submenu element
+		
+		if(pagename == "content/ComponentsB.html" || pagename == "content/BuyerGuide.html" || pagename == "content/Access.html"){ //checks if new page is part of the component section 
+			compsubtabs.style.display = "block"; //displays the components section for the sub-menu
+			marksubtabs.style.display = "none"; //makes the market section for the sub-menu invisible
+			manualsubtabs.style.display = "none"; //makes the instructional manual section for the sub-menu invisible
+			refsubtabs.style.display = "none"; //makes the reference section for the sub-menu invisible
+			
+			cont.style.height = "887px"; //makes the iframe full height of the screen
+			submenu.style.height = "887px"; //makes the submenu column full height of the screen
+			navbuttons.style.display = "none"; //makes the navigation buttons for the instructional manual section invisible
+			title.style.display = "none"; //makes the title area invisible
+			
+			subtoggle(pagename); //calls the functions for highlighting the corresponding sub-menu option while passing on the new page name
+		}
+		else if(pagename == "content/Retail.html" || pagename == "content/SRetail.html" || pagename == "content/Second.html"){ //checks if the new page is part of the market section
+			compsubtabs.style.display = "none"; //makes the components section for the sub-menu invisible
+			marksubtabs.style.display = "block"; //displays the market section for the sub-menu
+			manualsubtabs.style.display = "none"; //makes the instructional manual section for the sub-menu invisible
+			refsubtabs.style.display = "none"; //makes the reference section for the sub-menu invisible
+			
+			cont.style.height = "887px"; //makes the iframe full height of the screen
+			submenu.style.height = "887px"; //makes the submenu column full height of the screen
+			navbuttons.style.display = "none"; //makes the navigation buttons for the instructional manual section invisible
+			title.style.display = "none"; //makes the title area invisible
+			
+			subtoggle(pagename); //calls the functions for highlighting the corresponding sub-menu option while passing on the new page name
+		}
+		else if(pagename.search("Step") > 0){ //checks if the new page is part of the instructional manual section
+			compsubtabs.style.display = "none"; //makes the components section for the sub-menu invisible
+			marksubtabs.style.display = "none"; //makes the market section for the sub-menu invisible
+			manualsubtabs.style.display = "block"; //displays the market section for the sub-menu
+			refsubtabs.style.display = "none"; //makes the reference section for the sub-menu invisible
+			
+			cont.style.height = "837px"; //makes the iframe full height of the screen
+			submenu.style.height = "887px"; //makes the submenu column full height of the screen
+			navbuttons.style.display = "block"; //makes the navigation buttons for the instructional manual section visible
+			title.style.display = "none"; //makes the title area invisible
+			
+			subtoggle(pagename); //calls the functions for highlighting the corresponding sub-menu option while passing on the new page name
+		}
+		else if(pagename == "content/Learn.html"){
+			compsubtabs.style.display = "none"; //makes the components section for the sub-menu invisible
+			marksubtabs.style.display = "none"; //displays the market section for the sub-menu
+			manualsubtabs.style.display = "none"; //makes the instructional manual section for the sub-menu invisible
+			refsubtabs.style.display = "block"; //makes the reference section for the sub-menu invisible
+			
+			cont.style.height = "887px"; //makes the iframe full height of the screen
+			submenu.style.height = "887px"; //makes the submenu column full height of the screen
+			navbuttons.style.display = "none"; //makes the navigation buttons for the instructional manual section invisible
+			title.style.display = "none"; //makes the title area invisible
+			
+			subtoggle(pagename); //calls the functions for highlighting the corresponding sub-menu option while passing on the new page name
+		}
+		else{ //makes all sub-menus invisible for the Home Page
+			compsubtabs.style.display = "none"; //makes the components section for the sub-menu invisible
+			marksubtabs.style.display = "none"; //makes the market section for the sub-menu invisible
+			manualsubtabs.style.display = "none"; //makes the instructional manual section for the sub-menu invisible
+			refsubtabs.style.display = "none"; //makes the reference section for the sub-menu invisible
+			
+			cont.style.height = "787px"; //makes the iframe full height of the screen
+			submenu.style.height = "787px"; //makes the submenu column full height of the screen
+			navbuttons.style.display = "none"; //makes the navigation buttons for the instructional manual section invisible
+			title.style.display = "block";
+			
+			subtoggle(pagename); //calls the functions for highlighting the corresponding sub-menu option while passing on the new page name
+		}
+	}
+	function subtoggle(pagename){ //highlights the corresponding sub-menu options for the page being displayed in the iframe 
+		var cont = document.getElementById("frame"); //gets the iframe data based on id name
+		
+		//Components section buttons
+		var buttons = document.getElementById("compbuttons1"); //gets the elements for the Basic Function page
+		var buttons1 = document.getElementById("compbuttons2"); //gets the elements for the Buyer Guide page
+		var buttons2 = document.getElementById("compbuttons3"); //gets the elements for the Accessory page
+		
+		//Market section buttons
+		var buttons3 = document.getElementById("markbuttons1"); //gets the elements for the Major Retail page
+		var buttons4 = document.getElementById("markbuttons2"); //gets the elements for the Specialize Retail page
+		var buttons5 = document.getElementById("markbuttons3"); //gets the elements for the Second-hand page
+		
+		//Instructional Manual section buttons
+		var buttons6 = document.getElementById("stepbuttons1"); //gets the elements for the Step 0 page
+		var buttons7 = document.getElementById("stepbuttons2"); //gets the elements for the Step 1 page
+		var buttons8 = document.getElementById("stepbuttons3"); //gets the elements for the Step 2 page
+		var buttons9 = document.getElementById("stepbuttons4"); //gets the elements for the Step 3 page
+		var buttons10 = document.getElementById("stepbuttons5"); //gets the elements for the Step 4 page
+		
+		//Reference section buttons
+		var buttons11 = document.getElementById("refbuttons1"); //gets the elements for the Learning page
+		
+		if(pagename == "content/ComponentsB.html" && cont.src.search("content/ComponentsB.html") < 0){ //checks if the page in the iframe is the Basic Function page
+			buttons.classList.toggle("selectedbutton"); //toggles the button to be highlighted to indicate this page is being displayed
+			buttons1.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons2.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons3.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons4.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons5.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons6.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons7.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons8.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons9.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons10.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons11.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			
+		}
+		else if(pagename == "content/BuyerGuide.html" && cont.src.search("content/BuyerGuide.html") < 0){ //checks if the page in the iframe is Buyer Guide page and the new page being selected isn't not the same one
+			buttons.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons1.classList.toggle("selectedbutton"); //toggles the button to be highlighted to indicate this page is being displayed
+			buttons2.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons3.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons4.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons5.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons6.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons7.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons8.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons9.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons10.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons11.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			
+		}
+		else if(pagename == "content/Access.html" && cont.src.search("content/Access.html") < 0){ //checks if the page in the iframe is the Accessory page and the new page being selected isn't not the same one
+			buttons.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons1.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons2.classList.toggle("selectedbutton"); //toggles the button to be highlighted to indicate this page is being displayed
+			buttons3.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons4.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons5.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons6.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons7.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons8.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons9.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons10.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons11.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			
+		}
+		else if(pagename == "content/Retail.html" && cont.src.search("content/Retail.html") < 0){ //checks if the page in the iframe is the Major Retail page and the new page being selected isn't not the same one
+			buttons.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons1.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons2.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons3.classList.toggle("selectedbutton"); //toggles the button to be highlighted to indicate this page is being displayed
+			buttons4.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons5.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons6.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons7.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons8.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons9.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons10.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons11.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			
+		}
+		else if(pagename == "content/SRetail.html" && cont.src.search("content/SRetail.html") < 0){ //checks if the page in the iframe is the Specialize Retail page and the new page being selected isn't not the same one
+			buttons.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons1.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons2.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons3.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons4.classList.toggle("selectedbutton"); //toggles the button to be highlighted to indicate this page is being displayed
+			buttons5.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons6.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons7.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons8.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons9.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons10.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons11.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			
+		} 
+		else if(pagename == "content/Second.html" && cont.src.search("content/Second.html") < 0){ //checks if the page in the iframe is the Second-hand page and the new page being selected isn't not the same one
+			buttons.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons1.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons2.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons3.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons4.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons5.classList.toggle("selectedbutton"); //toggles the button to be highlighted to indicate this page is being displayed
+			buttons6.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons7.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons8.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons9.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons10.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons11.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			
+		}
+		else if(pagename == "content/Step0.html" && cont.src.search("content/Step0.html") < 0){ //checks if the page in the iframe is the Step 0 page and the new page being selected isn't not the same one
+			buttons.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons1.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons2.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons3.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons4.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons5.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons6.classList.toggle("selectedbutton"); //toggles the button to be highlighted to indicate this page is being displayed
+			buttons7.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons8.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons9.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons10.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons11.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			
+		} 
+		else if(pagename == "content/Step1.html" && cont.src.search("content/Step1.html") < 0){ //checks if the page in the iframe is the Step 1 page and the new page being selected isn't not the same one
+			buttons.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons1.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons2.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons3.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons4.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons5.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons6.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons7.classList.toggle("selectedbutton"); //toggles the button to be highlighted to indicate this page is being displayed 
+			buttons8.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons9.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons10.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons11.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			
+		}
+		else if(pagename == "content/Step2.html" && cont.src.search("content/Step2.html") < 0){ //checks if the page in the iframe is the Step 2 page and the new page being selected isn't not the same one
+			buttons.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons1.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons2.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons3.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed 
+			buttons4.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons5.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons6.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons7.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons8.classList.toggle("selectedbutton"); //toggles the button to be highlighted to indicate this page is being displayed 
+			buttons9.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons10.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons11.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			
+		}
+		else if(pagename == "content/Step3.html" && cont.src.search("content/Step3.html") < 0){ //checks if the page in the iframe is the Step 3 page and the new page being selected isn't not the same one
+			buttons.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons1.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons2.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons3.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons4.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons5.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons6.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons7.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons8.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons9.classList.toggle("selectedbutton"); //toggles the button to be highlighted to indicate this page is being displayed 
+			buttons10.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed 
+			buttons11.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			
+		}
+		else if(pagename == "content/Step4.html" && cont.src.search("content/Step4.html") < 0){ //checks if the page in the iframe is the Step 4 page and the new page being selected isn't not the same one
+			buttons.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons1.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons2.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons3.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons4.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons5.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons6.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons7.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons8.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons9.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons10.classList.toggle("selectedbutton"); //toggles the button to be highlighted to indicate this page is being displayed
+			buttons11.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			
+		}
+		else if(pagename == "content/Learn.html" && cont.src.search("content/Learn.html") < 0){
+			buttons.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons1.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons2.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons3.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons4.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons5.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons6.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons7.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons8.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons9.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons10.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons11.classList.toggle("selectedbutton"); //toggles the button to be highlighted to indicate this page is being displayed
+			
+		}
+		else if(pagename == "content/WorkCited.html" && cont.src.search("content/WorkCited.html") < 0){
+			buttons.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons1.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons2.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons3.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons4.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons5.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons6.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons7.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons8.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons9.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons10.classList.toggle("selectedbutton",false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons11.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons12.classList.toggle("selectedbutton"); //toggles the button to be highlighted to indicate this page is being displayed
+		}
+		else if(pagename == "content/Home-Page.html"){ //checks if the page in the iframe is the Home Page 
+			buttons.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons1.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons2.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons3.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons4.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons5.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons6.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons7.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons8.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons9.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons10.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			buttons11.classList.toggle("selectedbutton", false); //toggle the button to be in a neutral state to indicate that this page is not being displayed
+			
+		} 
+	}
+	function Navchange(dir){ //deals with changing the instructional manual page using the navigation buttons 
+		var cont = document.getElementById("frame"); //gets elements from the iframe
+		var navprev = document.getElementById("prev"); //gets the elements for the previous navigation button
+		var navnext = document.getElementById("next"); //gets the elements for the next navigation button
+		
+		if(cont.src.search("content/Step0.html") > 0){ //checks if the current page is Step 0
+			if(dir == 1){ //if the input(dir) is equal to one then the user selected the next button
+				pagechange("content/Step1.html"); //changes the page to the next page of the manual
+			}
+			else if(dir == 0){ //if the input(dir) is equal to zero then the user selected the previous button and will loop around to the end of the manual
+				pagechange("content/Step4.html"); //changes the page to the end of the manual
+				alert("You are going in the wrong direction"); //notifies the user about the direction that they are heading is not the one we intended
+			}
+		}
+		else if(cont.src.search("content/Step1.html") > 0){
+			if(dir == 1){ //if the input(dir) is equal to one then the user selected the next button
+				pagechange("content/Step2.html"); //changes the page to the next page of the manual
+			}
+			else if(dir == 0){ //if the input(dir) is equal to zero then the user selected the previous button
+				pagechange("content/Step0.html"); //changes the page to the previous page of the manual
+			}
+		}
+		else if(cont.src.search("content/Step2.html") > 0){
+			if(dir == 1){ //if the input(dir) is equal to one then the user selected the next button
+				pagechange("content/Step3.html"); //changes the page to the next page of the manual
+			}
+			else if(dir == 0){ //if the input(dir) is equal to zero then the user selected the previous button
+				pagechange("content/Step1.html"); //changes the page to the previous page of the manual
+			}
+		}
+		else if(cont.src.search("content/Step3.html") > 0){
+			if(dir == 1){ //if the input(dir) is equal to one then the user selected the next button
+				pagechange("content/Step4.html"); //changes the page to the next page of the manual
+			}
+			else if(dir == 0){ //if the input(dir) is equal to zero then the user selected the previous button
+				pagechange("content/Step2.html"); //changes the page to the previous page of the manual
+			}
+		}
+		else if(cont.src.search("content/Step4.html") > 0){
+			if(dir == 1){ //if the input(dir) is equal to one then the user selected the next button and will loop around to the beginning of the manual
+				pagechange("content/Step0.html"); //changes the page to the beginning of the manual
+				alert("You are now at the beginning"); //notifies the user about the direction that they are heading is not the one we intended
+			}
+			else if(dir == 0){ //if the input(dir) is equal to zero then the user selected the previous button
+				pagechange("content/Step3.html"); //changes the page to the previous page of the manual
+			}
+		}
+	}
+</script>
+</body>
+</html>
