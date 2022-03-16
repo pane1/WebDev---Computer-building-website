@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Components - Basic Functions</title>
+	<link rel="stylesheet" type="text/css" href="CSS/COMPONENTstyle.css"> <!-- importing the CSS for the basic function page -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- gettings the arrow icons for your tabs -->
+</head>
+<body>
+	<div id = "page intro"> <!-- div for the introduction section of the page -->
+		<p> <!-- introduction paragraph for the page -->
+			This page will provide a information of the basic functions each computer components. The computer is a very complicate machine that requires a multitude of components to function even laptop with 
+			their small form factor will require every single one of these components, the only difference is that all the form factor for their components will need to smaller. Every component that needs to
+			be bought with consideration with each other because they effect each other the same way. These components consist of:
+			<ul> <!-- list of components -->
+				<li>CPU</li>
+				<li>Motherboard</li>
+				<li>Videocard</li>
+				<li>RAM</li>
+				<li>Computer Case</li>
+				<li>Storage Device</li>
+				<li>Heatsink</li>
+				<li>Power Supply</li>
+			</ul>
+		</p>
+	</div>
+	<hr>
+	<div class = "row" id = "processor"> 
+		<h2><span class = "head" id = "processor title">Basic Functions - Processor (CPU)</span></h2> <!-- title for the processor section -->
+		<button onclick = "minAndMax(0)"class = "collapsible"></button> <!-- the button used to collapse the content div under this tag -->
+		<div class = "content"> <!-- div that contains the content of the processor section -->
+			<div class = "info" id = "Processor Information"> <!-- div that contains the information for the processor section -->
+				<p>
+					The core of the computer is the central processing unit (CPU), this compoent acts as the brain of the computer. The CPU
+					dictates how component should do their own respective functions. We will mainly be looking at how the CPU will effect
+					the other components that you will be working on, these components consist of the storage device, videocard, power supply, 
+					RAM, and motherboard. The CPU currently have two socket types, the AM and LGA types, each with their own sub types which is due to
+					the generation of CPU, these sub types are for example AM4 and LGA 1200. AMD is the developer of the AM socket types and Intel 
+					is the developer of the LGA socket types therefore their products will definitely be those respective types. A good way to 
+					distinct between the two socket types is if one has the pins of the chip itself, AMD chips will have the pins on the chip and the
+					intel chips will have no pins and only flat contact plates. Figuring out the sub type of socket won't be as easy but would require you 
+					to simply research the name or the CPU or the serial number printed onto the chip to find the sub type.
+				</p>
+				<p>
+					The CPU connects through to every device through the motherboard, the CPU connects to the motherboard via CPU socket port which also 
+					will have to match the socket types that the CPU has. A good indicator of what type of socket port is on the motherboard is the opposite
+					of the chip indicator, due to the AMD chip having pins the AMD socket port on the motherboard will have holes to fit the pins and the Intel
+					socket port will have pins in them to connect to the contact plates. Figuring out the sub type of socket port won't be as easy but would require you 
+					to simply research the name or the CPU or the serial number printed onto the board to find the sub type.
+				</p>
+				<p>
+					The processor works with the storage device to manage data, the processor will be able to read from and write to the storage device,
+					this is the process of saving and retrieving/openning your files. This process also relates to topics such write/read speeds which are 
+					purely dependent of the type of storage device that is being used. The processor is connected to the motherboard and the motherboard is
+					connected to the motherboard. The storage device is usually connected using a SATA cable to the motherboard, in more recent years storage
+					devices started to use other ports of the motherboard such the PCI port and the M.2 port on motherboards.
+				</p>
+				<p>
+					The CPU will always be either moving or calculating data, this due to the nature of the computer with only understanding numbers and not using any
+					language which means that the CPU will need many numbers to list all possible functions of every component of the computer. Now people have figured that 
+					it is easier to store some of this information instead of calculating it therefore RAM is needed. The processor and the RAM does the most work in a computer 
+					because when the processor is processing data and instructions the RAM is where they store the data temporarily before either sending this data to the their own 
+					respective locations or is used later by the processor. The processor connects to the motherboard via the CPU socket and the motherboard connects to the RAM via
+					the RAM slots.
+				</p>
+				<p>
+					As mentioned before the CPU is used to calculate and manipulate the data but the type of work that can be done on a computer increases as time passing on and the amount of 
+					resources demanded also increases therefore the computer needs another component to take the amount of processes from the CPU which is the GPU. The GPU is basicly a CPU chipset 
+					but that focuses on tasks that relates to graphics. The CPU connects to the GPU through the motherboard, the CPU connects to the motherboard through the CPU socket port and the 
+					GPU connects to the motherboard through the PCI port.
+				</p>
+				<p>
+					The most used resources in a computer is electricity, electricity provides power to the devices but it also is way for these components to communicate by simulating a binary
+					system where a low charge represents a zero but high charge represents a one. The CPU as mentioned before it controls everything even the amount of electricity comes into
+					each components. The power supply connects to the motherboard with PSU cables which then be able to connect to every other component, such as the CPU.
+				</p>	
+				<h3>Processor Reference Materials:</h3> 
+				<p><a href = "https://whatis.techtarget.com/definition/processor">More in-depth information of the technical function of a processor</a></p> <!-- reference material link -->
+			</div>
+			<div class = "illustration " id = "illustration table - processor"> <!-- div that contains the illustration needed for this section of the page -->
+				<table> <!-- table that contains the images for this section -->
+					<tr>
+						<td>
+							<img onclick = "openFullscreen(0)" src = "https://cdn.pixabay.com/photo/2019/08/08/16/56/cpu-4393383_960_720.jpg" width = "200" height = "200" alt = "CPU PIC">
+							<figcaption> Figure 1: Intel CPU chip</figcaption>
+						</td>
+						<td>
+							<img  onclick = "openFullscreen(1)" src = "https://c.pxhere.com/photos/43/ba/motherboard_electronics_chips_pc_a790gxh-1387047.jpg!d" width = "240" height = "200" alt = "MOTHERBOARD PIC">
+							<figcaption> Figure 2: Motherboard</figcaption>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img onclick = "openFullscreen(2)" src = "https://www.publicdomainpictures.net/pictures/30000/velka/internal-hard-drive.jpg" width = "210" height = "200" alt = "COMPUTER STORAGE PIC">
+							<figcaption> Figure 3: HDD Storage Device</figcaption>
+						</td>
+						<td>
+							<img onclick = "openFullscreen(3)" src = "https://i5.walmartimages.com/asr/de0ffe05-697d-4a01-b4ed-444cba79d25d_1.b0d2a13fbfb89b0975c3374c82c7f669.jpeg" width = "200" height = "200" alt = "RAM STICK PIC">
+							<figcaption> Figure 4: Stick of RAM</figcaption>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img onclick = "openFullscreen(4)" src = "https://webobjects2.cdw.com/is/image/CDW/5914049?wid=1142&hei=818&resMode=bilin&fit=fit,1" width = "240" height = "200" alt = "VIDEOCARD PIC">
+							<figcaption class = "lastcap"> Figure 5: Nvidea Quadro GV100 Videocard</figcaption>
+						</td>
+						<td>
+							<img onclick = "openFullscreen(5)" src = "https://c1.neweggimages.com/NeweggImage/ProductImage/17-139-234-V01.jpg" width = "240" height = "200" alt = "POWER SUPPLY PIC">
+							<figcaption class = "lastcap"> Figure 6: Corsair RM 850X Power Supply</figcaption>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class = "row" id = "motherboard">
+		<h2><span class = "head" id = "motherboard title">Basic Functions - Motherboard</span></h2> <!-- title for the motherboard section -->
+		<button onclick = "minAndMax(1)" class = "collapsible"></button> <!-- the button used to collapse the content div under this tag -->
+		<div class = "content"> <!-- div that contains the content for the motherboard section -->
+			<div class = "info" id = "Motherboard Information"> <!-- div that contains the information for the motherboard section -->
+				<p>
+					A motherboard provides connectivity between the hardware components, as you have seen above the motherboard connects to every component, for example, CPU, Videocard, RAM, Power Supply,
+					and Storage device. The motherboard acts a circuit for all the components with soldered copper wires and capacitors to help manage the power, the ports you see have thousands of copper
+					wires connected together so that the motherboard and the component can have a good and stable connection. A majority of motherboards come in two different sizes which are ATX and Micro-ATX, 
+					others might be present but those usually are unique and are made with a specific type of machine in mind, for example, a server motherboard might use a Super Micro form factor. Motherboards
+					are sorted into the type of CPU it can support, for example, as mentioned above their are two types of CPU socket series the AM and LGA series, the motherboards must have a CPU socket that 
+					can support the CPU because the CPU is the brain of the computer and due to the architect of the CPU no motherboard has both a AM and LGA series socket or even different generations of the 
+					same series. Most current motherboards at least consist of a CPU socket, RAM slots, 24-pin power port, PCI port, SATA port, CPU fan port, and a IO back panel. 
+				</p>
+				<p>
+					A motherboard connects with a CPU via CPU socket, as mentioned before the CPU socket have to match otherwise it will not work and might even damage the CPU chip and CPU socket. When it comes 
+					connecting a CPU each CPU socket type is different from the other, the Intel CPU will have connection pins on the motherboard socket port, be sure not to damage these pins because otherwise 
+					you will need a new motherboard, an AMD CPU will have the connection pins on the CPU chip and most of the time will not damaged but by chance the CPU does you will most likely not be able to 
+					use that CPU. The motherboard has two different locking mechanisms for the CPU, the Intel socket type will have a latch or cover for the CPU chip, the AMD socket type will have a mold for you
+					to fit all the pins in and a latch to move the mold to the connection plates on the motherboard.
+				</p>
+				<p>
+					A Videocard uses a PCI port to connect to the motherboard, the motherboard allows for the CPU to connect to the CPU which can not control the control the GPU. Depending on the price and size of
+					the motherboard you can fit more than one videocard but installing one Videocard will take the place of two PCI ports (the Videocard will cover the PCI port under the one your already using) 
+					therefore make sure you have enough space to install the multiple Videocards. The PCI port will provide power but for most higher end Videocards will need a direct cable or two connecting the 
+					Power Supply to the Videocard. For such a complicated device you will need to install drivers onto your computer so that the system knows the specification and configuration that the Videocard 
+					has so that the CPU can optimally run the Videocard. The PCI ports are usually secured using a clip on the PCI port itself but some more expensive motherboards will have release mechanisms to 
+					release the Videocard.
+				</p>
+				<p>
+					The Storage Devices uses a SATA cable to connect to the motherboard's SATA ports with the exception of the M.2 SSDs all Storage Devices use this method. A motherboard will usually have multiple 
+					SATA ports therefore allow you to have multiple Storage Devices. There are currently three types of SATA cables, SATA 1, SATA 2, and SATA 3, Storage Devices uses all three types so make you have
+					the current SATA ports and cables, each have their own speeds, SATA 1 has a speed of 1.5gb/s, SATA 2 has a speed of 3.0gb/s, and SATA 3 has a speed of 6.0gb/s. The SATA cables will have a built-in
+					clips to secure itself onto the motherboard.
+				</p>
+				<p>
+					A motherboard has RAM slots so that you can insert RAM sticks. The number of RAM slots, the frequency of the RAM slots, the type of RAM slots, and the memory configuration will all differ depending
+					on the motherboard. Most motherboard will have at least two RAM slots and most motherboard will be compatible running DDR3 and DDR4, older motherboards will use DDR1 and DDR2. With reguards to 
+					frequency most DDR3 RAM runs at a frequency of 1333MHz to 2400MHz and most DDR4 runs at a frequency of 2400MHz to 3200MHz, the range frequency that a motherboard depends on the price because higher 
+					frequency are either possible through overclock or otherwise would not be compatible therefore the more expensive the motherboard the more likely that the frequency would be compatible. The RAM 
+					configuration would depend on the motherboard but most more expensive motherboards will likely run dual channel or higher because they are more likely to have RAM slots whereas the lower end of 
+					motherboards will have less RAM slots therefore limited on the memory configuration. The RAM is secured in the RAM slots using the two clips at both ends of each RAM stick to secure the RAM stick, 
+					you will have to unclip both ends to remove the RAM stick.
+				</p>
+				
+				<p>
+					Heatsink as mention before need to match the socket type of the motherboard because each socket type will have the distant and position of the holes be different from the other, this also needs to 
+					needs to align with the back plate that is provided with the heatsink or motherboard which will actually connect with the heatsink and not the motherboard itself. Older heatsinks that comes with the 
+					CPU itself (also known as stock heatsinks) have a their own respective mounting methods, AMD will have built-in clips that is attached to the back plate for the heatsink to clip on and Intel will use 
+					pins attached to the heatsink that you will need to pop-in into the back plate, more modern will use mounting brackets to hold down the heatsink and the brackets will attached via mounting screws to 
+					the back plate, this creates more and better contact with the CPU due to the additional pressure, there might be some resistance but you want a good connection between the heatsink and the CPU chip. 
+					The heatsink will also need power for the fan so you will connect a power pin from the fan to the motherboard.
+				</p>
+				<h3>Motherboard Reference Materials:</h3> <!-- referenec material for the motherboard section -->
+				<p><a href = "https://www.computerhope.com/jargon/m/mothboar.htm">More in-depth information of the technical function of a motherboard</a></p>
+				<p><a href = "https://techterms.com/definition/pci">More in-depth information of the technical function of a PCI port</a></p>
+				<p><a href = "https://kb.sandisk.com/app/answers/detail/a_id/8142/~/difference-between-sata-i%2C-sata-ii-and-sata-iii">More in-depth information of the technical function of a SATA</a></p>
+			</div>
+			<div class = "illustration " id = "illustration - motherboard"> <!-- div that contains the illustration for the motherboard section -->
+				<table> <!-- table that contains the images for the motherboard section -->
+					<tr>
+						<td>
+							<img onclick = "openFullscreen(6)" src = "https://static.bhphoto.com/images/images500x500/asus_prime_b360m_a_lga_1151_1523364363_1398146.jpg" width = "200" height = "200" alt = "ATX MOTHERBOARD PIC">
+							<figcaption> Figure 7: ATX motherboard</figcaption>
+						</td>
+						<td>
+							<img onclick = "openFullscreen(7)" src = "https://quietpc.ca/images/products/asus-b360-i.jpg" width = "200" height = "200" alt = "MICRO ATX MOTHERBOARD PIC">
+							<figcaption> Figure 8: Micro-ATX motherboard</figcaption>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img onclick = "openFullscreen(8)" src = "https://img.hexus.net/v2/lowe/News/AMD/socket.jpg" width = "240" height = "200" alt = "AM3 SOCKET PIC">
+							<figcaption> Figure 9: AM3 motherboard socket</figcaption>
+						</td>
+						<td>
+							<img onclick = "openFullscreen(9)" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/LGA_Socket_1366.jpg/290px-LGA_Socket_1366.jpg" width = "200" height = "200" alt = "LGA SOCKET PIC">
+							<figcaption> Figure 10: LGA 1366 motherboard socket</figcaption>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img onclick = "openFullscreen(10)" src = "https://cdn.techterms.com/img/lg/pci_107-2.jpg" width = "200" height = "200" alt = "PCI PORTS PIC">
+							<figcaption> Figure 11: PCI ports</figcaption>
+						</td>
+						<td>
+							<img onclick = "openFullscreen(11)" src = "https://support.hp.com/doc-images/810/c02968382.jpg" width = "200" height = "200" alt = "SATA PORTS PIC">
+							<figcaption> Figure 12: SATA ports</figcaption>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img onclick = "openFullscreen(12)" src = "https://sgcdn.startech.com/005329/media/products/main/lsatax.main.jpg" width = "200" height = "200" alt = "SATA CABLES PIC">
+							<figcaption> Figure 13: SATA cables</figcaption>
+						</td>
+						<td>
+							<img onclick = "openFullscreen(13)" src = "https://2pwgqm3nczsg1a5kw72u2pcf-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/RAM-module-motherboard.jpg" width = "240" height = "200" alt = "RAM SLOT PIC">
+							<figcaption> Figure 14: RAM slots</figcaption>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img onclick = "openFullscreen(14)" src = "https://i.imgur.com/1K39hPk.png" width = "200" height = "200" alt = "RAM configuration PIC">
+							<figcaption class = "lastcap"> Figure 15: 8 RAM slot with <br> quad-channel memory configuration</figcaption>
+						</td>
+						<td>
+							<img onclick = "openFullscreen(15)" src = "https://noctua.at/pub/media/wysiwyg/images/faqs/faq_amd_backplate_top.jpg" width = "240" height = "200" alt = "HEATSINK HOLES PIC">
+							<figcaption class = "lastcap"> Figure 16: Heatsink mounting screws</figcaption>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class = "row" id = "videocard">
+		<h2><span class = "head" id = "videocard title">Basic Functions - Videocard</span></h2> <!-- title for the videocard section -->
+		<button onclick = "minAndMax(2)" class = "collapsible"></button> <!-- the button used to collapse the div content under this tag -->
+		<div class = "content">  <!-- div that contains the content for the videocard section -->
+			<div class = "info" id = "Videocard Information"> <!-- div that contains the information for the videocard section -->
+				<p>
+					A Videocard actually is a very complicated piece of hardware itself, its composed of components that are very similar to a computer system, for example, it has a cooling system, its own RAM (also known
+					as VRAM), and the GPU. As mentioned before a GPU is basicly a CPU that has a focus on handling graphics matters so that the CPU does not have to bare the burden, so the architecture of the GPU is very 
+					similar to the CPU but consist of more ALU (arithmetic logic units) which allows for more pipeline processing which means it can handle more calculations compared to a CPU in the same clock cycle, but
+					has smaller number of cache and control units allowing the CPU to handle more general tasks. As mentioned in the CPU section, processing requires RAM because a chip can only retain a certain amount of 
+					data and if the data is lost or not represent it take to much time to recreate or retrieve it from storage therefore we store the additional data in RAM therefore similar to a CPU having general RAM to
+					use, a GPU will have VRAM (also known as virtual random access memory) which is RAM dedicated for the GPU whereas general RAM could be used by multiple components, the VRAM will give your computer some
+					breathing room especially when it comes to dealing with high resolution graphics with either with games or even watching a movie, the size of the VRAM is also compariable to general RAM where more expensive
+					Videocards have up to 8gb of VRAM. For more powerful GPUs they produce a lot of heat because of how much processing the GPU is doing therefore the Videocard it also needs a heatsink like a CPU chip, 
+					usually this heatsink it attached to the Videocard already and does not require you to install or to replace, the heatsink helps cool the VRAM on the card. A Videocard will also a combination of output 
+					ports for you to plug in your HDMI ports, DVI ports, VGA ports, Display ports, and Mini-display ports to connect to your display device.
+				</p>
+				<p>
+					In terms of working with other components, as mentioned in the CPU section the CPU will allocate work that focuses on graphics to the GPU and this done through a connection to the motherboard through 
+					a PCI port on the motherboard but the Videocard is such a powerful piece of hardware most modern Videocards need a seperate power cable to power the component. This is due to the limitation of the 
+					copper on the PCI connector on the Videocard not being able to handle such high currents thus if you run a Videocard with a seperate power port using only the PCI connection it will burn/melt the PCI
+					connector and most likely damage the PCI port as well. 
+				</p>
+				<h3>Videocard Reference Materials:</h3> <!-- reference materials for the videocard section -->
+				<p><a href = "https://www.itpro.co.uk/hardware/30399/what-is-a-gpu">More in-depth information on what a GPU is</a></p>
+				<p><a href = "https://www.lifewire.com/what-is-a-video-card-2618161">More in-depth information on what a Videocard is</a></p>
+				<p><a href = "https://www.geeksforgeeks.org/difference-between-cpu-and-gpu/">More in-depth information of the difference between GPU and CPU</a></p>
+			</div>
+			<div class = "illustration " id = "illustration - videocard"> <!-- div that contains the illustration for the videocard section -->
+				<table> <!-- table that contains the images for the videocard section -->
+					<tr>
+						<td>
+							<img onclick = "openFullscreen(16)" src = "https://media.geeksforgeeks.org/wp-content/uploads/20190604184859/Untitled-Diagram-2019-06-04T182727.822.png" width = "280" height = "200" alt = "GPU ARCHITECTURE PIC">
+							<figcaption> Figure 17: General GPU architecture</figcaption>
+						</td>
+						<td>
+							<img onclick = "openFullscreen(17)"src = "https://media.geeksforgeeks.org/wp-content/uploads/20190604183921/Untitled-Diagram-2019-06-04T181553.233.png" width = "200" height = "200" alt = "CPU ARCHITECTURE PIC">
+							<figcaption> Figure 18: General CPU architecture</figcaption>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img onclick = "openFullscreen(18)" src = "https://media.dragonblogger.com/wp-content/uploads/2017/01/23035558/dbb2f0f8_MAeVvX9.jpeg" width = "280" height = "200" alt = "GPU HEATSINK PIC">
+							<figcaption> Figure 19: GPU heatsink</figcaption>
+						</td>
+						<td>
+							<img onclick = "openFullscreen(19)" src = "https://graphicscardhub.com/wp-content/uploads/2018/03/vram-chips.jpg" width = "200" height = "200" alt = "VRAM PIC">
+							<figcaption> Figure 20: VRAM on a Videocard</figcaption>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img onclick = "openFullscreen(20)" src = "https://www.ozone3d.net/public/jegx/201011/gtx480_power_connectors.jpg" width = "200" height = "200" alt = "GPU POWER PORT PIC">
+							<figcaption class = "lastcap"> Figure 21: GPU power port</figcaption>
+						</td>
+						<td>
+							<img onclick = "openFullscreen(21)" src = "https://linustechtips.com/main/uploads/monthly_2016_07/14679337376981358223255.jpg.30faebf7791cc02c248df32b4c91fb48.jpg" width = "200" height = "200" alt = "DAMAGE PCI PIC">
+							<figcaption class = "lastcap"> Figure 22: Damaged PCI connector</figcaption>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class = "row" id = "RAM">
+		<h2><span class = "head" id = "chassis title">Basic Functions - RAM</span></h2> <!-- title for the RAM section -->
+		<button onclick = "minAndMax(3)" class = "collapsible"></button> <!-- the button used to collapse the div content under this tag -->
+		<div class = "content"> <!-- div that contains the content for the RAM section -->
+			<div class = "info" id = "Case Information"> <!-- div that contains the information for the RAM section -->
+				<p>
+					Random access memory or RAM is a type of memory, this type of memory is a high speed but temporary memory, the reading and writing speed is much faster than then hard drive memory but the memory on
+					RAM is los after the loss of power. RAM is neccessary because this is the location where the computer stores commonly used data of programs or a temporary storing location for data that will be used
+					later in the same operation. One might equate RAM as short-term memory. RAM has many iterations because people has been developing a larger and faster forms of RAM, the most recent iteration of RAM
+					is the DDR4 type, which was proceeded by the DDR3, and so on. DDR4 and DDR3 are still used by most machine whereas DDR2 and DDR1 is less common if not simply not used anymore due to the inferior 
+					performance they provide. Like most components of a computer RAM operates on a clock-cycle therefore the frequency of RAM is the speed of RAM, this will determine how fast data is read or written into
+					the RAM, the frequency of RAM is proportional to the type of RAM in regards to DDR4 would have higher frequencies where DDR3 would not, DDR4 runs at a frequency of around 2400MHz to 3200MHz, and 
+					DDR3 runs at a frequency of around 1333MHz to 2400MHz. RAM itself is a black chip soldered onto the RAM stick which is sometimes covered by a heat spreader to help cool the RAM, the heat spreader 
+					is the metalic plate or holder that is on a stick which comes in different colors and shapes and even lights up using LEDs.
+				</p>
+				<p>
+					As mentioned in the Videocard section their is a type of RAM called VRAM which is RAM exclusively for the GPU and is located in a different location, which is on the Videocard itself and is not modular 
+					like the general RAM that one can purchase, to modify VRAM you would need to remove the Videocard heatsink and unsolder the VRAM from the Videocard, this is highly ill advised.
+				</p>
+				<h3>RAM Reference Materials:</h3> <!-- reference materials for the RAM section -->
+				<p><a href = "https://centralvalleycomputerparts.com/articles/-ram-explained/">More in-depth information on what RAM is</a></p>
+				<p><a href = "https://www.computerhope.com/jargon/c/clockcyc.htm">More in-depth information on clock cycle</a></p>
+			</div>
+			<div class = "illustration "> <!-- div that contains the illustration for the RAM section -->
+				<table> <!-- table that contains the images for the RAM section -->
+					<tr>
+						<td>
+							<img onclick = "openFullscreen(22)" src = "https://www.atpinc.com/upload/images/2020/04-22/38e598da6aea4fbcbb46fd9d231d49eb.jpg" width = "220" height = "220" alt = "RAM TYPE PIC">
+							<figcaption class = "lastcap"> Figure 23: Difference in RAM type</figcaption>
+						</td>
+						<td>
+							<img onclick = "openFullscreen(23)" src = "https://www.quietpc.com/images/products/kama-wing-black-large.jpg" width = "260" height = "220" alt = "RAM HEAT SPREADER PIC">
+							<figcaption class = "lastcap"> Figure 24: Black heat spreaders</figcaption>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class = "row" id = "case">
+		<h2><span class = "head" id = "chassis title">Basic Functions - Computer Case (Chassis)</span></h2> <!-- title for the computer case section -->
+		<button onclick = "minAndMax(4)" class = "collapsible"></button> <!-- the button used to collapse the div content under this tag -->
+		<div class = "content"> <!-- div that contains the content for the computer case section -->
+			<div class = "info" id = "Case Information"> <!-- div that contains the information for the computer case section -->
+				<p>
+					The computer case or the chassis is probably the least neccessary component of the computer but it is something that has to be considered at every step of the building
+					process because when creating your computer the size of the chassis is limited so when your deciding your interior components you'll need to make sure those components fit.  
+					The chassis comes a variety shapes and sizes the most common chassis sizes are Full Tower, mid-tower, and mini-ITX. These sizes also determine the size of the motherboard
+					size because the chassis has pre-drilled holes for where the screws from the motherboard will go into thus only certain form factor motherboards fit, the Full Tower and mid-tower
+					allows for ATX motherboards and the mini-ITX chassis allows for the micro-ATX motherboards, the former is the most common form factor because the case for that motherboard is the 
+					most common where as the ladder is more unique and more of a custom job. The chassis also comes with a multitude of features like LED lights, multiple USB portts, and fan controls,
+					these features all vary in availability depending on the chassis price range. A chassis can also cool your computer other than the heatsink which is the case fans or chassis fans,
+					these fans are attach to the chassis through screws, the amount of fans and the size of fans all are determined by the type of case, usually the mid-tower and Full Tower have 
+					around five fan slots and the mini-ITX usually only have one but most of the time only one chassis fan is needed. Usually the case would have extra slots to fit in other components,
+					for example, SSD trays or mounts, HDD trays, PCI output slots and IO port slots, these slots avaiablility also depend on the chassis size and price.
+				</p>
+				<p>
+					The motherboard will mounted onto the computer via motherboard holes with screw threads already present in the case for you to install the motherboard, if the holes do not align that would mean 
+					that the case you have does not support the motherboard that you have, do not try to create threads holes for your current motherboard because this would lead to instability in your Computer Case 
+					structure. The IO panel will need a plate to fit perfectly to your Computer Case. The Computer Case will have wire managing components to it depending on the case but they will have at least a back 
+					area (usually the right panel area of the Computer Case) to hide/group the bulk of your cables that you will have connecting to your motherboard. The Computer Case will might also connect to your 
+					motherboard because your Computer Case will at least have a power button and a couple of USB ports and to make these function you will need to connect them to your UI pins on the motherboard (usually 
+					located on the bottom right corner along with a legend). 
+				</p>
+				<h3>RAM Reference Materials:</h3> <!-- reference material for the computer case section -->
+				<p><a href = "https://www.pcworld.com/article/3226748/how-to-buy-pc-case.html">More in-depth information on Computer Cases and what they offer</a></p>
+			</div>
+			<div class = "illustration " id = "illustration - chassis"> <!-- div that contains the illustration for the computer case section -->
+				<table> <!-- tables that contains the images for the computer case section -->
+					<tr>
+						<td>
+							<img onclick = "openFullscreen(24)" src = "https://thermaltake.azureedge.net/pub/media/catalog/product/cache/25e62158742be0ef47d2055284094406/c/o/corep5tg_1.jpg" width = "220" height = "220" alt = "COMPUTER CHASSIS PIC">
+							<figcaption> Figure 25: Mid-Tower chassis</figcaption>
+						</td>
+						<td>
+							<img onclick = "openFullscreen(25)" src = "https://i2.wp.com/techporn.ph/wp-content/uploads/NCASE-M1-4.jpg?ssl=1" width = "260" height = "220" alt = "SMALL COMPUTER CHASSIS PIC">
+							<figcaption> Figure 26: Mini-ITX chassis</figcaption>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img onclick = "openFullscreen(26)" src = "https://i.imgur.com/vJ7Rca0.png" width = "220" height = "220" alt = "MOTHERBOARD HOLES PIC">
+							<figcaption class = "lastcap"> Figure 27: Motherboard screw threads</figcaption>
+						</td>
+						<td>
+							<img onclick = "openFullscreen(27)" src = "https://multimonitorcomputer.com//builder/instructions/mb/images/cs_front_panel_connectors2.jpg" width = "220" height = "220" alt = "HEATSINK HOLES PIC">
+							<figcaption class = "lastcap"> Figure 28: Computer Case UI cables</figcaption>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class = "row" id = "storage">
+		<h2><span class = "head" id = "storage title">Basic Functions - Storage Device</span></h2> <!-- title for the storage section -->
+		<button onclick = "minAndMax(5)" class = "collapsible"></button> <!-- the button used to collapse the div content under this tag -->
+		<div class = "content"> <!-- div that contains the content for the storage section -->
+			<div class = "info" id = "Storage Information">	<!-- div that contains the information for the storage section -->
+				<p>
+					For long while when computers were being developed the standard storage device were HDDs (also known as hard disk drive), in the past two decades the standard has changed to due to the 
+					introduction of SSDs (also known as solid state drive). A HDD is a series of enclosed platters with a ferromagnetic coating, data will be written and read from the disc with a "head" similar
+					to vinyl records being played, the head will read the direction of the magnetization on the disc and that is how binary is printed onto a disc. Due to the mechanism of the HDD this is a purely
+					mechanical process which means this would result in the slowest speeds. Due to have multiple layers of disc to store memory the storage capacity of a HDD is quite large, on average most HDD can
+					store at least 1Tb of data, but due to the nature of HDD being mechanical the longivity of the HDD is put into question most HDD would last around 4-years. A SDD uses flash memory to store 
+					information, the binary system is created by a grid of NAND flash cells (also known as blocks) can store the data and using a controller of the SSD this can instantly locate the data and due 
+					to the lack of mechanical parts this leads to producing the fastest speeds. Due to mechanism of the SSD using chips full of flash cells there can only be a limited amount of space on a board 
+					therefore a limit on the amount of chips of a board and also due to the nature of having more flash cells resulting to having a larger capacity this leads to a price increase as a result of a 
+					increase of flash cells, that is why SSD are more expensive then HDD. As SSDs are a newer technology this would mean it is still being developed, the development of the SSD has lead to the M.2 SSDs,
+					this new SSD type uses a M.2 connector and M.2 port instead of the typical SATA cable and SATA port, using the M.2 port the SSD has a mucher greater transfer speed than any storage device before
+					by reaching speeds of around 4gb/s whereas normal SSDs max out at around 600Mb/s.
+				</p>
+				<p>
+					As mentioned in the motherboard section the storage devices connects to the motherboard in two ways using the SATA ports or the M.2 ports, most motherboard will have the a couple of SATA ports 
+					but it would depend on the price of the motherboard if it would have a M.2 port. To secure the storage devices after connecting the non-M.2 storage devices you would need to use one of the
+					computer storage trays in the Computer Case itself, the case most likely offer a couple of HDD trays and occasionally some SSD trays or mounts depending on the model.
+				</p>
+				<h3>RAM Reference Materials:</h3> <!-- reference materials for the storage section -->
+				<p><a href = "https://www.avast.com/c-what-is-ssd">More in-depth information on what a SSD is</a></p>
+				<p><a href = "https://www.avast.com/c-ssd-vs-hdd">More in-depth information comparing a HDD and SSD</a></p>
+				<p><a href = "https://www.tomshardware.com/reviews/glossary-m2-definition,5887.html">More in-depth information on a M.2 SSD</a></p>
+			</div>
+			<div class = "illustration " id = "illustration - storage"> <!-- div that contains the illustration for the storage section -->
+				<table> <!-- tables that contains the images for the storage section -->
+					<tr>
+						<td>
+							<img onclick = "openFullscreen(28)" src = "https://www.backblaze.com/blog/wp-content/uploads/2016/03/blog-ssd-inside-300x184.jpg" width = "240" height = "220" alt = "SSD INTERIOR PIC">
+							<figcaption> Figure 29: SSD interior</figcaption>
+						</td>
+						<td>
+							<img onclick = "openFullscreen(29)" src = "https://www.computerhope.com/jargon/h/hard-drive.jpg" width = "240" height = "220" alt = "HDD INTERIOR PIC">
+							<figcaption> Figure 30: HDD interior</figcaption>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img onclick = "openFullscreen(30)" src = "https://recovered.co/wp-content/uploads/2020/01/Solid-State-Drive-SSD-Data-Recovery-.jpg" width = "240" height = "220" alt = "M.2 SSD PIC">
+							<figcaption> Figure 31: M.2 SSD</figcaption>
+						</td>
+						<td>
+							<img onclick = "openFullscreen(31)" src = "https://www.groovypost.com/wp-content/uploads/2018/02/locate-m2-slot-1280x853.jpg" width = "240" height = "220" alt = "HDD INTERIOR PIC">
+							<figcaption> Figure 32: M.2 port</figcaption>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img onclick = "openFullscreen(32)" src = "https://eteknix-eteknixltd.netdna-ssl.com/wp-content/uploads/2012/03/HDD-Cage.jpg" width = "240" height = "220" alt = "HDD TRAYS PIC">
+							<figcaption class = "lastcap"> Figure 33: HDD storage trays in a rack</figcaption>
+						</td>
+						<td>
+							<img onclick = "openFullscreen(33)" src = "https://tpucdn.com/review/nzxt-h500i/images/instssd3_small.jpg" width = "240" height = "220" alt = "SSD TRAYS PIC">
+							<figcaption class = "lastcap"> Figure 34: SSD mount</figcaption>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class = "row" id = "heatsink">
+		<h2><span class = "head" id = "heatsink title">Basic Functions - Heatsink</span></h2> <!-- title for the heatsink section -->
+		<button onclick = "minAndMax(6)" class = "collapsible"></button> <!-- the button used to collapse the div content under this tag -->
+		<div class = "content"> <!-- div that contains the content for the heatsink section -->
+			<div class = "info" id = "heatsink Information"> <!-- div that contains the information for the heatsink section -->
+				<p>
+					A heatsink may not play a noticable function on your computer but heatsinks are very important because this allows for your CPU to run at a high load but not overheat, as mentioned before processing
+					produces a lot of heat therefore your CPU should produce the most and as the heat builds up there is a chance that your CPU would overheat which could damage the CPU component. If you have ever seen
+					a heatsink before it basicly composed of two parts, one is a radiator and the other is the fan, the radiator has a contact plate which draws the heat from the CPU to the radiator which is made from
+					many fins to create a large surface area to disperse the heat, the fan helps cool these fins to further dissipate the heat. For the heatsink to have the most effect is when the contact plates touches 
+					the CPU chip as much as possible but not all heatsink are made perfect and some may not get the max amount of area of the CPU chip or due to the architecture design of a CPU chip it does not allow for
+					maximum surface area contact, to solve this problem we use something called Thermal Paste, which is a kind of liquid that is applied between the heatsink contact plate and the CPU chip to fill in the 
+					holes, this paste also is very effective at conducting temperature therefore heat travel through the paste easily. 
+				</p>	
+				<h3>Heatsink Reference Materials:</h3> <!-- reference material for the heatsink section -->
+				<p><a href = "https://www.tomshardware.com/reviews/thermal-paste-comparison,5108-3.html">More in-depth information on use of Thermal Paste</a></p>
+			</div>
+			<div class = "illustration " id = "illustration - heatsink"> <!-- div that contains the illustration for the heatsink section -->
+				<table> <!-- table that contains the images for the heatsink section -->
+					<tr>
+						<td>
+							<img onclick = "openFullscreen(34)" src = "https://s3-eu-west-1.amazonaws.com/cdn.coolermaster.com/assets/1009/h212blacke_g6-small.png" width = "235" height = "235" alt = "HEATSINK CONTACTPLATE PIC">
+							<figcaption class = "lastcap"> Figure 35: Heatsink contact plate and radiator</figcaption>
+						</td>
+						<td>
+							<img onclick = "openFullscreen(35)" src = "https://cdn.instructables.com/F8R/FJCE/IWQVE6CS/F8RFJCEIWQVE6CS.LARGE.jpg?auto=webp&frame=1&fit=bounds" width = "235" height = "235" alt = "THERMAL PASTE PIC">
+							<figcaption class = "lastcap"> Figure 36: Thermal Paste applied to CPU</figcaption>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class = "row" id = "power supply">
+		<h2><span class = "head" id = "power supply title">Basic Functions - Power Supply</span></h2> <!-- title for the PSU section -->
+		<button onclick = "minAndMax(7)" class = "collapsible"></button> <!-- the button used to collapse the div content under this tag -->
+		<div class = "content"> <!-- div that contains the content for the PSU heatsink section -->
+			<div class = "info" id = "Power Supply Information"> <!-- div that contains the information for the PSU section -->
+				<p>
+					A Power Supply is piece hardware in the computer that not obvious when comes to function on a computer but is very essential for the operation of a computer. The Power Supply converts
+					the AC current from your outlets to DC current which the type of power that your computer components uses, it also acts a regulator for your computer because it controls the voltage 
+					in your computer to prevent overheating. The Power Supply is scaled on the Watt unit (W) therefore when your going in store to find a certain size Power Supply you will have to state
+					what the Wattage is for that product. To power your computer you do not actually have to directly connect wires to the other components seperately some do like a motherboard and 
+					possibly your Videocard but most components can get power through your motherboard and through which ever port that component is connected to either it is a M.2 port, a USB port, a SATA
+					port, a CPU socket, and a 4 or 6 pin power port. To power the motherboard though it takes a 24 pin connector that comes attached to the Power Supply to power the motherboard which in turn
+					powers the rest of the components.
+				</p>	
+				<h3>Power Supply Reference Materials:</h3> <!-- reference material for the PSU section -->
+				<p><a href = "https://computer.howstuffworks.com/power-supply.htm">More in-depth information on a Power Supply and the technology inside</a></p>
+			</div>
+			<div class = "illustration " id = "illustration - power supply"> <!-- div that contains the illustration for the PSU section -->
+				<table> <!-- tables that contains the images for the PSU section -->
+					<tr>
+						<td>
+							<img onclick = "openFullscreen(36)" src = "https://brain-images-ssl.cdn.dixons.com/4/1/10187914/u_10187914.jpg" width = "220" height = "220" alt = "24-PIN CABLE PIC">
+							<figcaption class = "lastcap"> Figure 37: Power Supply with its <br> 24-pin power connector</figcaption>
+						</td>
+						<td>
+							<img onclick = "openFullscreen(37)" src = "https://www.xtremegaminerd.com/wp-content/uploads/2020/05/24-pin-ATX-connector-768x404.jpg" width = "260" height = "220" alt = "24-PIN PORT PIC">
+							<figcaption class = "lastcap"> Figure 38: 24-pin port on the motherboard</figcaption>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+	<button class = "topButton" id = "topOfPage"><i class = "fa fa-caret-up"></i></button> <!-- button that is used to return to the top of the page -->
+	
+	<div id = "processor fullscreen images"> <!--div that stores the fullscreen size images for the processor section-->
+		<!--First Row-->
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(0)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://cdn.pixabay.com/photo/2019/08/08/16/56/cpu-4393383_960_720.jpg" width = "500" height = "500" alt = "CPU PIC">
+		</div>
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(1)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://c.pxhere.com/photos/43/ba/motherboard_electronics_chips_pc_a790gxh-1387047.jpg!d" width = "600" height = "500" alt = "MOTHERBOARD PIC">
+		</div>
+		<!--Second Row-->
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(2)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://www.publicdomainpictures.net/pictures/30000/velka/internal-hard-drive.jpg" width = "500" height = "500" alt = "CPU PIC">
+		</div>
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(3)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://i5.walmartimages.com/asr/de0ffe05-697d-4a01-b4ed-444cba79d25d_1.b0d2a13fbfb89b0975c3374c82c7f669.jpeg" width = "600" height = "500" alt = "RAM STICK PIC">
+		</div>
+		<!--Third Row-->
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(4)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://webobjects2.cdw.com/is/image/CDW/5914049?wid=1142&hei=818&resMode=bilin&fit=fit,1" width = "600" height = "500" alt = "VIDEOCARD PIC">
+		</div>
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(5)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://c1.neweggimages.com/NeweggImage/ProductImage/17-139-234-V01.jpg" width = "550" height = "500" alt = "POWER SUPPLY PIC">
+		</div>
+	</div>
+	<div id = "motherboard fullscreen images"> <!--div that stores the fullscreen size images motherboard section-->
+		<!--First Row-->
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(6)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://static.bhphoto.com/images/images500x500/asus_prime_b360m_a_lga_1151_1523364363_1398146.jpg" width = "500" height = "600" alt = "ATX MOTHERBOARD PIC">
+		</div>
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(7)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://quietpc.ca/images/products/asus-b360-i.jpg" width = "500" height = "500" alt = "MICRO ATX MOTHERBOARD PIC">
+		</div>
+		<!--Second Row-->
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(8)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://img.hexus.net/v2/lowe/News/AMD/socket.jpg" width = "600" height = "500" alt = "AM3 SOCKET PIC">
+		</div>
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(9)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/LGA_Socket_1366.jpg/290px-LGA_Socket_1366.jpg" width = "500" height = "500" alt = "LGA SOCKET PIC">
+		</div>
+		<!--Third Row-->
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(10)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://cdn.techterms.com/img/lg/pci_107-2.jpg" width = "500" height = "500" alt = "PCI PORTS PIC">
+		</div>
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(11)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://support.hp.com/doc-images/810/c02968382.jpg" width = "500" height = "500" alt = "SATA PORTS PIC">
+		</div>
+		<!--Fourth Row-->
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(12)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://sgcdn.startech.com/005329/media/products/main/lsatax.main.jpg" width = "500" height = "500" alt = "SATA CABLES PIC">
+		</div>
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(13)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://2pwgqm3nczsg1a5kw72u2pcf-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/RAM-module-motherboard.jpg" width = "600" height = "500" alt = "RAM SLOT PIC">
+		</div>
+		<!--Fourth Row-->
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(14)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://i.imgur.com/1K39hPk.png" width = "580" height = "500" alt = "RAM configuration PIC">
+		</div>
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(15)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://noctua.at/pub/media/wysiwyg/images/faqs/faq_amd_backplate_top.jpg" width = "600" height = "500" alt = "HEATSINK HOLES PIC">
+		</div>
+	</div>
+	<div id = "videocard fullscreen images"> <!--div that stores the fullscreen size images videocard section-->
+		<!--First Row-->
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(16)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://media.geeksforgeeks.org/wp-content/uploads/20190604184859/Untitled-Diagram-2019-06-04T182727.822.png" width = "650" height = "500" alt = "GPU ARCHITECTURE PIC">
+		</div>
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(17)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://media.geeksforgeeks.org/wp-content/uploads/20190604183921/Untitled-Diagram-2019-06-04T181553.233.png" width = "500" height = "520" alt = "CPU ARCHITECTURE PIC">
+		</div>
+		<!--Second Row-->
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(18)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://media.dragonblogger.com/wp-content/uploads/2017/01/23035558/dbb2f0f8_MAeVvX9.jpeg" width = "660" height = "500" alt = "GPU HEATSINK PIC">
+		</div>
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(19)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://graphicscardhub.com/wp-content/uploads/2018/03/vram-chips.jpg" width = "500" height = " 500" alt = "VRAM PIC">
+		</div>
+		<!--Third Row-->
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(20)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://www.ozone3d.net/public/jegx/201011/gtx480_power_connectors.jpg" width = "500" height = "500" alt = "GPU POWER PORT PIC">
+		</div>
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(21)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://linustechtips.com/main/uploads/monthly_2016_07/14679337376981358223255.jpg.30faebf7791cc02c248df32b4c91fb48.jpg" width = "500" height = "500" alt = "DAMAGE PCI PIC">
+		</div>
+	</div>
+	<div id = "RAM fullscreen images"> <!--div that stores the fullscreen size images RAM section-->
+		<!--First Row-->
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(22)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://www.atpinc.com/upload/images/2020/04-22/38e598da6aea4fbcbb46fd9d231d49eb.jpg" width = "520" height = "520" alt = "RAM TYPE PIC">
+		</div>
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(23)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://www.quietpc.com/images/products/kama-wing-black-large.jpg" width = "660" height = "520" alt = "RAM HEAT SPREADER PIC">
+		</div>
+	</div>
+	<div id = "Chasis fullscreen images"> <!--div that stores the fullscreen size images Chassis section-->
+		<!--First Row-->
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(24)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://thermaltake.azureedge.net/pub/media/catalog/product/cache/25e62158742be0ef47d2055284094406/c/o/corep5tg_1.jpg" width = "520" height = "520" alt = "COMPUTER CHASSIS PIC">
+		</div>
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(25)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://i2.wp.com/techporn.ph/wp-content/uploads/NCASE-M1-4.jpg?ssl=1" width = "660" height = "520" alt = "SMALL COMPUTER CHASSIS PIC">
+		</div>
+		<!--Second Row-->
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(26)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://i.imgur.com/vJ7Rca0.png" width = "520" height = "520" alt = "MOTHERBOARD HOLES PIC">
+		</div>
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(27)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" onclick = "openFullscreen(27)" src = "https://multimonitorcomputer.com//builder/instructions/mb/images/cs_front_panel_connectors2.jpg" width = "520" height = "520" alt = "HEATSINK HOLES PIC">
+		</div>
+	</div>
+	<div id = "Storage fullscreen images"> <!--div that stores the fullscreen size images Storage section-->
+		<!--First Row-->
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(28)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://www.backblaze.com/blog/wp-content/uploads/2016/03/blog-ssd-inside-300x184.jpg" width = "560" height = "520" alt = "SSD INTERIOR PIC">
+		</div>
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(29)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://www.computerhope.com/jargon/h/hard-drive.jpg" width = "540" height = "520" alt = "HDD INTERIOR PIC">
+		</div>
+		<!--Second Row-->
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(30)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://recovered.co/wp-content/uploads/2020/01/Solid-State-Drive-SSD-Data-Recovery-.jpg" width = "640" height = "520" alt = "M.2 SSD PIC">
+		</div>
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(31)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://www.groovypost.com/wp-content/uploads/2018/02/locate-m2-slot-1280x853.jpg" width = "540" height = "520" alt = "HDD INTERIOR PIC">
+		</div>
+		<!--Third Row-->
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(32)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://eteknix-eteknixltd.netdna-ssl.com/wp-content/uploads/2012/03/HDD-Cage.jpg" width = "540" height = "520" alt = "HDD TRAYS PIC">
+		</div>
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(33)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://tpucdn.com/review/nzxt-h500i/images/instssd3_small.jpg" width = "540" height = "520" alt = "SSD TRAYS PIC">
+		</div>
+	</div>
+	<div id = "Heatsink fullscreen images"> <!--div that stores the fullscreen size images heatsink section-->
+		<!--First Row-->
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(34)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize white-background" src = "https://s3-eu-west-1.amazonaws.com/cdn.coolermaster.com/assets/1009/h212blacke_g6-small.png" width = "535" height = "535" alt = "HEATSINK CONTACTPLATE PIC">
+		</div>
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(35)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://cdn.instructables.com/F8R/FJCE/IWQVE6CS/F8RFJCEIWQVE6CS.LARGE.jpg?auto=webp&frame=1&fit=bounds" width = "535" height = "535" alt = "THERMAL PASTE PIC">
+		</div>
+	</div>
+	<div id = "PSU fullscreen images"> <!--div that stores the fullscreen size images PSU section-->
+		<!--First Row-->
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(36)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://brain-images-ssl.cdn.dixons.com/4/1/10187914/u_10187914.jpg" width = "520" height = "520" alt = "24-PIN CABLE PIC">
+		</div>
+		<div class = "fullscreenImg">
+			<span onclick = "closeFullscreen(37)" class = "close">&times;</span> <!--creates a close button when in fullscreen mode-->
+			<img class = "fullscreenSize" src = "https://www.xtremegaminerd.com/wp-content/uploads/2020/05/24-pin-ATX-connector-768x404.jpg" width = "660" height = "520" alt = "24-PIN PORT PIC">
+		</div>
+	</div>
+	
+<script src = "https://code.jquery.com/jquery-3.5.1.js"></script> <!-- JQuery that allows me to manage the scroll animation and speed-->
+<script>
+	var coll = document.getElementsByClassName("collapsible"); //array variable used to store the contents by class, in this case is the "collapsible" class 
+	var full = document.getElementsByClassName("fullscreenImg"); //array variable used to store the contents by class, in this case is the "fullscreenImg" class
+	window.onscroll = function() {scrollAppear()}; //automatically detects a user scroll through the page, if so it will call the scrollAppear() function
+	
+	function minAndMax(n){ 
+		coll[n].classList.toggle("collapsibled"); //changing between the classes from collapsible to collapsibled 
+		
+		var content = coll[n].nextElementSibling; //a variable that contains the elements after the collapsible class 
+		
+		if (content.style.display == "none"){ //an if-statement that will check if the div display property is set to the none value
+			content.style.display = "block"; //changes the display property of the div to block value
+		} 
+		else { //checks if the display property is not valued at none then it woulld change it to none
+			content.style.display = "none"; //changes the display property of the div to none value
+		} 
+	}
+	
+	function openFullscreen(n){
+		var i; //variable used as a counter
+		
+		for(i = 0; i < full.length; i++){ //loops through the elem array
+			full[i].style.display = "none"; //makes all the elem array elements invisible
+		}
+		
+		full[n].style.display = "block"; //makes the elem array element with the corresponding n index be displayed in fullscreen mode
+	}
+	
+	function closeFullscreen(n){ //
+		full[n].style.display = "none"; //makes the corresponding fullscreen invisible
+	}
+	
+	function scrollAppear(){ //function that will determine if the "top-of-page" button should appear for the amount of space been pass through the scroll bar
+		var scrollButton = document.getElementById("topOfPage"); //gets the "top-of-page" button elements by ID
+		
+		if (document.body.scrollTop > 15 || document.documentElement.scrollTop > 15) { //checks if the space scrolled through on the page is 15px or greater
+			scrollButton.style.display = "block"; //makes the "top-of-page" button visible
+		} else {
+			scrollButton.style.display = "none"; //makes the "top-of-page" button invisible
+		}
+	}
+	
+	$(document).ready(function(){ //JQuery code to scroll to a certain position of the page when the "top-of-page" button is clicked with a certain speed
+		$(".topButton").click(function() { //if the "top-of-page" button is selected
+			$("html, body").animate({  //will move to a certain point on the page with an animation
+				scrollTop: 0 //new page position
+			}, "slow"); //speed of the animation
+			return false;
+		});
+	});
+</script>
+</body>
+</html>

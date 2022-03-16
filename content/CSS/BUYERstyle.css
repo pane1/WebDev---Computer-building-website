@@ -1,0 +1,133 @@
+*{ /*allows me to create a multiple columns with divs*/
+	box-sizing: border-box;
+} /*allows me to create a multiple columns with divs*/
+br{
+	margin: 0;
+}
+.row:after{
+	content: ""; /*makes the content empty*/
+	display: table; /*displays in a table format*/
+	clear: both; /*makes that the there is no floating content left or right*/
+}
+p{ /*modifies the paragraph tag to have a certain spacing and text alignment*/
+	font-size: 17px; /*has a font size of 17px*/
+	margin: 20px; /*has a spacing of 20px away from other elements*/
+	text-align: justify; /*text align to filling in all the spaces inbetween*/
+}
+h2{ /*modifies the header tag to have a certain spacing and align with the collapse button*/
+	margin-top: 0px; /*no spacing on the top*/
+	margin-left: 20px; /*has a spacing on the left*/
+	display: inline-block; /*displays in an in-line block format*/
+}
+.head{ /*creates a title with a certain font size*/
+	font-size: 36px; /*has a font size of 36px*/
+}
+.label{ /*creates a certain highlight for labels*/
+	color: #6895e9; /*color blue lettering*/
+	font-weight: bold; /*has a font weight of bold*/
+}
+.recommendation{ /*creates a specific area for the information and recommendation to be stored*/
+	background-color: #ebebef; /*color light gray background*/
+	margin: 25px; /*has a spacing of 25px away from other elements*/
+	border-radius: 5px; /*rounds the corners to have a radius of 5px*/
+	text-align: justify; /*text align to filling in all the spaces inbetween*/
+	display: block; /*displays in a block format*/
+}
+.recommendcontent{ /*creates a specific area for the information to be stored*/
+	width: 100%; /*has a length of 100%*/
+	margin-bottom: 0; /*has a spacing of 10px on the bottom*/
+	
+}
+hr{ /*creates a thicker line with an altered color and spacing*/
+	height: 3px; /*has a height of 3px*/
+	background-color: #91bafc; /*color blue background*/
+	border: none; /*no border*/
+	margin: 10px; /*has a spacing of 10px away from other elements*/
+}
+.spacing{
+	border: 1px solid black;
+}
+.procontable{ /*creates a specific area for the pros and cons table to be stored*/
+	width: 20%; /*has a length of 20%*/
+	float: left; /*moves to the left*/
+	margin-left: 20px; /*has a spacing of 20px on the left*/
+	margin-bottom: 15px; /*has a spacing of 15px on the bottom*/
+}
+.contable{ /*creates the spacing for the cons table*/
+	margin-right: 55%; /*has a spacing of 55% on the right*/
+	margin-bottom: 15px; /*has a spacing of 15px on the bottom*/
+}
+.pros{ /*creates the layout for the pros table*/
+	table-layout: auto; /*automically change the width of the cells if the browser is resized*/
+	color: white; /*color white lettering*/
+	font-size: 17px; /*has a font size of 17px*/
+	width: 100%; /*has a length of 100%*/
+}
+.cons{ /*creates the layout for the cons table*/
+	table-layout: auto; /*automically change the width of the cells if the browser is resized*/
+	color: white; /*color white lettering*/
+	font-size: 17px; /*has a font size of 17px*/
+	width: 100%; /*has a length of 100%*/
+}
+.protabletitle{ /*creates the title box for the pros table*/
+	background-color: #1dbd12; /*color green background*/
+}
+.procontent{ /*creates the points made in the pros table*/
+	background-color: #9cd398; /*color light green background*/
+	text-align: left; /*text align to the left*/
+}
+.contabletitle{ /*creates the title box for the cons table*/
+	background-color: #d74242; /*color red background*/
+}
+.concontent{ /*creates the points made in the cons table*/
+	background-color: #eba5a5; /*color light red background*/
+	text-align: left; /*text align to the left*/
+}
+.tabletitle{ /*modifies the tables title font*/
+	font-size: 28px; /*has a font size of 28px*/
+	font-family: Arial, Helvetica, sans-serif; /*arial font type*/
+	text-shadow: 2px 2px black; /*has text shadow with 2px right and bottom*/
+}
+.tablelabel{ /*modifies so that label that comes with the point*/
+	font-weight: bold; /*has a font weight of bold*/
+}
+.tablenumber{ /*modifies the numbering for the pros/cons table*/
+	width: 10%; /*has a length of 10%*/
+}
+.collapsible{ /*creates the collapse button*/
+	padding: 9px 15px; /*9px of top and bottom, 15px space of left and right of text*/
+	margin-left: 10px; /*has a spacing of 10px on the left*/
+	background-color: white; /*color white background*/
+	border: 2px solid black; /*has a border 2px thick*/
+}
+.collapsible:after{ /*creates the negative symbol for the collapse button*/
+	content: '\2212'; /*negative symbol as content*/
+	font-size: 25px; /*has a font size of 25px*/
+}
+.collapsibled{ /*creates the expand button*/
+	padding: 9px 15px; /*9px of top and bottom, 15px space of left and right of text*/
+	margin-left: 10px; /*has a spacing of 10px on the left*/
+	background-color: #91bafc; /*color blue background*/
+}
+.collapsibled:after { /*creates the positive symbol for the expand button*/
+    content: "\002B"; /*positive symbol as content*/
+	font-size: 25px; /*has a font size of 25px*/
+}
+.topButton{ /*creates a button with a specific spacing and design*/
+	position: fixed; /*has a fixed position*/
+	bottom: 15px; /*is 15px away from the bottom of the page*/
+	right: 20px; /*is 20 away from the right of the page*/
+	display: none; /*invisible by default*/
+	z-index: 1;	 /*appear infront of other elements*/
+	padding: 10px 18px; /*10px of top and bottom, 18px space of left and right of text*/
+	background-color: #91bafc; /*color blue background*/
+	color: black; /*color black lettering*/
+	border: 2px solid black; /*has a border of 1px thick*/
+	font-family: arial; /*arial font type*/
+	font-size: 20px; /*has a font size of 20px*/
+	border-radius: 3px; /*rounds the corners to a radius of 3px*/
+}
+.topButton:hover{ /*creates a hover effect for this class*/
+	background-color: #3c3c3c; /*color dark gray background*/
+	color: white; /*color white lettering*/
+}

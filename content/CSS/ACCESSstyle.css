@@ -1,0 +1,136 @@
+*{ /*allows me to create a multiple columns with divs*/
+	box-sizing: border-box;
+} 
+.info{ /*creatas a specific area for the information of each section to be stored in*/
+	float: left; /*moves to the left*/
+	width: 62.5%; /*has a length of 62.5%*/		
+	margin-left: 0.5%; /*has a spacing of 0.5% on the left*/
+	border-radius: 15px; /*rounds the corners with a radius of 15px*/
+	background-color: #ebebef; /*color light gray background*/
+	text-align: justify; /*text align to filling in all the spaces inbetween*/
+	display: block; /*displays in a block format*/
+}
+.illustration{ /*creates a specific area for the illustration of each section to be stored in*/
+	float: left; /*moves to the left*/
+	width: 37%;	/*has a length of 37%*/
+	overflow-x:auto; /*automatically changes accordingly for the element when resizing*/
+}
+.row:after{ /*allows me to create a multiple columns with divs*/
+	content: ""; /*makes the content empty*/
+	display: table; /*displays in a table format*/
+	clear: both; /*makes that the there is no floating content left or right*/
+}
+p{ /*modifies the paragraph tag to have a specific spacing and text alignment*/
+	font-size: 17px; /*has a font size of 17px*/
+	margin: 20px; /*has a spacing of 20px away from other elements*/
+	text-align: justify; /*text align to filling in all the spaces inbetween*/
+}
+h2{ /*modifies the header tag to have a specific spacing and aligns with the collaspe button*/
+	margin-top: 0px; /*no spacing on the top*/
+	margin-left: 20px; /*has a spacing on the left*/
+	display: inline-block; /*displays in an in-line block format*/
+}
+h3{ /*modifies the header tag to have a specific spacing*/
+	margin: 10px; /*has a spacing of 10px away from other elements*/
+}
+.head{ /*modifies the title to a certain font size*/
+	font-size: 36px; /*has a font size of 36px*/
+}
+img{ /*modifies the image tag so that it spaced specifically and have a certain design to make more visually appealling*/
+	margin: 10px; /*has a spacing of 10px away from other elements*/
+	margin-bottom: 0px; /*no spacing on the bottom*/
+	border: 1px solid black; /*has a border 1px thick*/
+}
+table{ /*modified the table tag to have specific spacing and have a certain design to make more visually appealling*/
+	margin: auto; /*has an automatic spacing*/
+	margin-top: 4px; /*has a spacing of 4px on the top*/
+	margin-right: 15px; /*has a spacing of 15px on the right*/
+	margin-bottom: 15px; /*has a spacing of 15px on the bottom*/
+	background-color: white; /*color white background*/
+	border: 2px solid black; /*has a border 2px thick*/
+}
+figcaption{ /*modifies the caption tag to have a specific spacing and font size*/
+	margin-left: 10px; /*has a spacing on the left*/
+	font-size: 14px; /*has a font size of 14px*/
+}
+.lastcap{
+	margin-bottom: 10px; /*has a spacing on the bottom*/
+}
+hr{ /*modifies the horizontal line tag to create a thicker blue line with specific spacing*/
+	height: 3px; /*has a height of 3px*/
+	background-color: #91bafc; /*color blue background*/
+	border: none; /*no border*/
+	margin-bottom: 15px; /*has a spacing of 15px on the bottom*/
+	margin-top: 15px; /*has a spacing of 15px on the top*/
+	margin-left: 0.1%; /*has a spacing of 0.1% on the left*/
+	margin-right: 0.1%; /*has a spacing of 0.1% on the right*/
+} 
+.collapsible{ /*creates the collapse button*/
+	padding: 9px 15px; /*9px of top and bottom, 15px space of left and right of text*/
+	margin-left: 10px; /*has a spacing of 10px on the left*/
+	background-color: white; /*color white background*/
+	border: 2px solid black; /*has a border 2px thick*/
+}
+.collapsible:after{ /*creates the negative symbol for the collapse button*/
+	content: '\2212'; /*negative symbol as content*/
+	font-size: 25px; /*has a font size of 25px*/
+}
+.collapsibled{ /*creates the expand button*/
+	padding: 9px 15px; /*9px of top and bottom, 15px space of left and right of text*/
+	margin-left: 10px; /*has a spacing of 10px on the left*/
+	background-color: #91bafc; /*color blue background*/
+}
+.collapsibled:after { /*creates the positive symbol for the expand button*/
+	content: "\002B"; /*positive symbol as content*/
+	font-size: 25px; /*has a font size of 25px*/
+}
+.fullscreenImg{ /*creates an area for a larger video to be displayed on*/
+	position: fixed; /*has a fixed position*/
+	z-index: 1; /*overlays any other element*/
+	padding-top: 200px; /*has a spacing of 200px on the top*/
+	left: 0; /*no extra spacing on the left*/
+	top: 0; /*no extra spacing on the top*/
+	width: 100%; /*has a length of 100%*/
+	height: 100%; /*has a height of 100%*/
+	background-color: black; /*color black background*/
+	display: none; /*invisible by default*/
+}
+.fullscreenSize{ /*modifies the video to have certain spacing*/
+	display: block; /*displays the video in block format*/
+	margin: auto; /*automatically manages the video spacing*/
+	border: 1px solid white;
+}
+.close{ /*modifies the close button for the fullscreen mode*/
+	position: absolute; /*has a fixed position*/
+	color: white; /*color white lettering*/
+	font-size: 55px; /*has a font size of 55px*/
+	font-weight: 900; /*has a font weight of 900*/
+	transition: 0.3s; /*transitions/effects take 0.3s to complete*/
+	right: 35px; /*has a spacing of 35px on the right from the entire window*/
+	top: 10px; /*has a spacing of 10px on the top from the entire window*/
+	cursor: pointer; /*has a pointer style for the cursor*/
+}
+.close:hover{ /*creates a hover effect for the close button for the fullscreen mode*/
+	color: #9ce8eb; /*color light blue lettering*/
+}
+.white-background{ /*creates a passive background for png images*/
+	background-color: white; /*color white background*/
+}
+.topButton{ /*creates a button with a specific spacing and design*/
+	position: fixed; /*has a fixed position*/
+	bottom: 15px; /*is 15px away from the bottom of the page*/
+	right: 20px; /*is 20 away from the right of the page*/
+	display: none; /*invisible by default*/
+	z-index: 1;	 /*appear infront of other elements*/
+	padding: 10px 18px; /*10px of top and bottom, 18px space of left and right of text*/
+	background-color: #91bafc; /*color blue background*/
+	color: black; /*color black lettering*/
+	border: 2px solid black; /*has a border of 1px thick*/
+	font-family: arial; /*arial font type*/
+	font-size: 20px; /*has a font size of 20px*/
+	border-radius: 3px; /*rounds the corners to a radius of 3px*/
+}
+.topButton:hover{ /*creates a hover effect for this class*/
+	background-color: #3c3c3c; /*color dark gray background*/
+	color: white; /*color white lettering*/
+}
